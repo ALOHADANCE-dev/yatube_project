@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('', include('posts.urls')),                                        #главная страница                                  
+    path('', include('posts.urls', namespace='posts')),                                        #главная страница                                  
     path('admin/', admin.site.urls)
 ]
